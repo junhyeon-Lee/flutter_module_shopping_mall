@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_module_shopping_mall/presentation/view/view_screens/special_exhibition/special_edition_list_items.dart';
+import 'package:flutter_module_shopping_mall/presentation/view/view_screens/limited_edition/limited_edition_list_items.dart';
 
 class LimitedEdition extends StatelessWidget {
   const LimitedEdition({Key? key}) : super(key: key);
@@ -8,6 +8,8 @@ class LimitedEdition extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final deviceWidth = MediaQuery.of(context).size.width;
+    final deviceHeight = MediaQuery.of(context).size.height;
+
     List<String> images = ['assets/images/sample.png','assets/images/pika.png','assets/images/sample.png','assets/images/pika.png'];
     return Scaffold(
       body: Column(children: [
@@ -36,7 +38,7 @@ class LimitedEdition extends StatelessWidget {
 
 
 
-          SizedBox(height: 1000,
+          SizedBox(height: deviceHeight*0.85,
           child: DefaultTabController(
             length: 10,
             child: Scaffold(
@@ -58,7 +60,7 @@ class LimitedEdition extends StatelessWidget {
 
                 ],
               ),
-              body: SizedBox(height: 800,
+              body: SizedBox(height: deviceHeight*0.83,
                 child: TabBarView(
                   children: <Widget>[
 

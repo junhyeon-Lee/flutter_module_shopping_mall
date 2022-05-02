@@ -42,15 +42,80 @@ class SpecialEditionListItems extends StatelessWidget {
               const Text('[VARIVAS] AVANI JIGGING MAS POWER'),
               Row(
                 children: const [
-                  Text('20% 80,000'),
+                  Text('20% 80,000 '),
                   Text('100,000', style: TextStyle(decoration: TextDecoration.lineThrough))
                 ],
               ),
 
 
-            ],)
+              Row(
+                children: const [
+                  Icon(Icons.star_outlined,size: 15,),
+                  Text('(120))')
+                ],
+              ),
+
+              Row(
+                children: [
+                  Container(padding: const EdgeInsets.all(3),
+                      decoration:const BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.all(Radius.circular(4)),
+                      ),
+                      child: const Text('품절임박',style: TextStyle(color: Colors.white,fontSize: 12),),
+                  ),
+
+                  const SizedBox(width: 5,),
+                  Container(padding: const EdgeInsets.all(3),
+                    decoration:const BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.all(Radius.circular(4)),
+                    ),
+                    child: const Text('무료배송',style: TextStyle(color: Colors.black,fontSize: 12),),
+                  ),
+                ],
+              ),
+
+
+
+            ],
+          )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
