@@ -2,6 +2,7 @@
     package="com.example.flutter_module_shopping_mall">
    <application
         android:label="flutter_module_shopping_mall"
+        android:usesCleartextTraffic="true"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

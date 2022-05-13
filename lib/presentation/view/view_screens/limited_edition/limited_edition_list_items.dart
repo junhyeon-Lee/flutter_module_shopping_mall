@@ -50,7 +50,7 @@ class SpecialEditionListItems extends StatelessWidget {
 
               Row(
                 children: const [
-                  Icon(Icons.star_outlined,size: 15,),
+                   Icon(Icons.star_outlined,size: 15,),
                   Text('(120))')
                 ],
               ),
