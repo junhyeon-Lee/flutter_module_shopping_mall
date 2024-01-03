@@ -1,4 +1,7 @@
-# flutter_module_shopping_mall
+# Hit_up
 
-A new Flutter project.
+Hitup 프로젝트
 
+특이사항
+
+Hitup 프로젝트 2차 버전
